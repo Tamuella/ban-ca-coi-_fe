@@ -78,7 +78,22 @@ const Navbar: React.FC = () => {
       color: 'text-red-400',
     });
   }
-
+  if (userInfo?.role === 'Manager') {
+    navItems.push({
+      to: '/staff/sales',
+      icon: FaCog,
+      text: 'Sales',
+      color: 'text-red-400',
+    });
+  }
+  if (userInfo?.role === 'Manager') {
+    navItems.push({
+      to: '/staff/delivering',
+      icon: FaTruck,
+      text: 'Delivering',
+      color: 'text-green-400',
+    });
+  }
   if (userInfo?.role === 'SalesStaff') {
     navItems.push({
       to: '/staff/sales',

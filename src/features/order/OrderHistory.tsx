@@ -165,7 +165,7 @@ const OrderHistory: React.FC = () => {
               ) : (
                 <FaSortAmountUp className="inline-block mr-1" />
               )}
-              Sort by Order ID
+              Sort new Order
             </button>
           </div>
           <div className="mb-4">
